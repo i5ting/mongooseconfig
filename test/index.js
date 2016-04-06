@@ -1,0 +1,2 @@
+var cfg = require('..')()
+

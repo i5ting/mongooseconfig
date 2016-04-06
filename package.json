@@ -1,10 +1,12 @@
 {
   "name": "mongooseconfig",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "export DEBUG= &&  node app.js",
+    "test": "export DEBUG=mongooseconfig &&  node app.js",
+    "s": "standard index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/i5ting/mongooseconfig/issues"
   },
-  "homepage": "https://github.com/i5ting/mongooseconfig#readme"
+  "homepage": "https://github.com/i5ting/mongooseconfig#readme",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "mongoose": "^4.4.11"
+  },
+  "devDependencies": {
+    "express": "^4.13.4"
+  }
 }
