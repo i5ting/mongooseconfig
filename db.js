@@ -11,10 +11,10 @@ module.exports = function(config){
 
   var is_debug = config.is_debug;
   if(is_debug) {
-    debug('\033[32m提醒:debug状态连接数据库:\033[39m');
+    console.log('\033[32m提醒:debug状态连接数据库:\033[39m');
     host  = config.host;
   }else{
-    debug('\033[91m警告:非debug状态连接数据库:\033[39m');
+    console.log('\033[91m警告:非debug状态连接数据库:\033[39m');
     host  = config.host;
   }
 
@@ -51,11 +51,13 @@ module.exports = function(config){
   
   var gracefulExit = function() { 
     mongoose.connection.close(function () {
-      debug('Mongoose default connection with DB is disconnected through app termination');
+      console.log('[MONGOOSE CONFIG] INFO : Mongoose default connection with DB is disconnected through app termination');
       process.exit(0);
     });
   }
 
   // If the Node process ends, close the Mongoose connection
   process.on('SIGINT', gracefulExit).on('SIGTERM', gracefulExit);
+  
+  return connectionString
 };
