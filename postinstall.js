@@ -26,6 +26,9 @@ mkdirp(project_path, function (err) {
       console.log("[MONGOOSE CONFIG] INFO " + _path + ' is not exist, now create a example file')
   
       fs.createReadStream(__dirname + "/config/mongodb.example.js").pipe(fs.createWriteStream( _examle_file_path ))
+      
+      console.log("[MONGOOSE CONFIG] \033[32m提醒: 已创建示例配置文件，需要手动执行以下操作： cp config/mongodb.example.js config/mongodb.js \033[39m")
+      
     }
 });
 
