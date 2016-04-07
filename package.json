@@ -1,6 +1,6 @@
 {
   "name": "mongooseconfig",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,7 @@
   "homepage": "https://github.com/i5ting/mongooseconfig#readme",
   "dependencies": {
     "debug": "^2.2.0",
+    "mkdirp": "^0.5.1",
     "mongoose": "^4.4.11"
   },
   "devDependencies": {
