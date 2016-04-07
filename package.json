@@ -1,7 +1,7 @@
 {
   "name": "mongooseconfig",
-  "version": "1.0.5",
-  "description": "",
+  "version": "1.0.6",
+  "description": "an easy mongoose config module",
   "main": "index.js",
   "scripts": {
     "start": "export DEBUG= &&  node app.js",

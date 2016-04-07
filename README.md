@@ -20,7 +20,9 @@ npm install --save mongooseconfig
 
 ## Usages
 
-in app.js(express or koa1 or koa2)
+### 最简单的用法
+
+在app.js(无论是express or koa1 or koa2，还是其他框架)的第一行增加
 
 ```
 require('mongooseconfig')()
@@ -31,6 +33,16 @@ require('mongooseconfig')()
 ```
 cp config/mongodb.example.js config/mongodb.js
 ```
+### 自定义配置路径
+
+在app.js(无论是express or koa1 or koa2，还是其他框架)的第一行增加
+
+```
+require('mongooseconfig')(__dirname + '/myconfig/db.js')
+```
+
+这样它就会加载用户指定的自定义配置路径了
+
 
 ## 配置项
 
