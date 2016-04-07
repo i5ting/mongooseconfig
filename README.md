@@ -62,6 +62,10 @@ module.exports = {
 - poolSize: 10
 - is_debug: true
 
+## 示例
+
+https://github.com/i5ting/mongooseconfig-example
+
 ## Dev
 
 ```
