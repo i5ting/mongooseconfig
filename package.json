@@ -1,12 +1,13 @@
 {
   "name": "mongooseconfig",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "export DEBUG= &&  node app.js",
     "test": "export DEBUG=mongooseconfig &&  node app.js",
     "s": "standard index.js",
+    "pub": "npm publish .",
     "postinstall": "node postinstall.js"
   },
   "repository": {
